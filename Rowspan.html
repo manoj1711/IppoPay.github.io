@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        tr:nth-child(even){
+            background-color: beige;
+        }
+        th:nth-child(even), td:nth-child(odd){
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+<table style="width: 150px; max-height:fit-content;">
+    <tr>
+        <th>Name</th>
+        <td>Virat</td>
+    </tr>
+    <tr>
+        <th rowspan="2">Jersey Number</th>
+        <td>18</td>
+    </tr>
+    <tr>
+        <td>18</td>
+    </tr>
+</table>
+</body>
+</html>

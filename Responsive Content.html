@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive content</title>
+        <style>
+            *{
+                box-sizing:border-box;
+            }
+            .Left{
+                background-color:brown;
+                color: floralwhite;
+                padding: 20px;
+                width: 80%;
+            }
+            .Center{
+                background-color: slateblue;
+                color: floralwhite;
+                padding: 20px;
+                width: 80%;
+            }
+            .Right{
+                background-color: red;
+                color: floralwhite;
+                padding: 20px;
+                width: 80%;
+            }
+            @media screen and (max-width: 800px) {
+                .left, .main, .right {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="font-size: 10vw;">IppoPay</h1>
+        <div class="Left">
+            <p>QR Payment Processing</p>
+        </div>
+        <div class="Center">
+            <p>Point of Sale Machine</p>
+        </div>
+        <div class="Right">
+            <p>Sound box for confirmation</p>
+        </div>
+    <picture>
+        <source srcset="HTML/Images/images.jpeg" media="(max-width:300px)">
+        <source srcset="HTML/Images/download (4).png" media="(max-width:1500px)">
+        <img src="C:\Users\acer\OneDrive\Desktop\IppoPay Internship\HTML\Images\IppoPay.jpg" alt="IppoPay" style="width: auto;">
+    </picture>
+    
+    </body>
+</html>
+
+
+

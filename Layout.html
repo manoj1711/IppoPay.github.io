@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>
+    HTML Layout Elements
+</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+            * {
+                box-sizing:border-box;
+            }
+            body{
+                font-family: 'Times New Roman', Times, serif;
+            }
+            header{
+                background-color: darkturquoise;
+                padding: 35px;
+                text-align: center;
+                font-size: 40px;
+                color: floralwhite;
+            }
+            nav{
+                float: left;
+                width: 35%;
+                height: 300px;
+                background: #ccc;
+                padding: 25px;
+            }
+            nav ul{
+                list-style-type: none;
+                padding: 0%;
+            }
+            article{
+                float: left;
+                padding: 20px;
+                width:65%;
+                background-color:limegreen;
+                height: 300px;
+            }
+            section::after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+            footer{
+                background-color: indigo;
+                padding: 10px;
+                text-align: center;
+                color: floralwhite;
+            }
+            @media (max-width:600px){
+                nav, article{
+                    width:100px;
+                    height: auto;
+                }
+            }
+            </style>
+            </head>
+        <body>
+            <h2>HTML and Layout</h2>
+            <p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other</p>
+            <header>
+                <h2>Cities</h2>
+            </header>
+            <section>
+                <nav>
+                    <ul>
+                        <li><a href="https://en.wikipedia.org/wiki/Bangalore" target="_blank">Bangalore</a>
+                        </li>
+                        <li><a href="https://en.wikipedia.org/wiki/Chennai" target="_blank">Chennai</a>
+                        </li>
+                        <li><a href="https://en.wikipedia.org/wiki/Mumbai" target="_blank">Kochi</a>
+                        </li>
+                    </ul>
+                </nav>
+                <article>
+                    <h1>Bangalore</h1>
+                    <p> Bengaluru (also called Bangalore) is the capital of India's southern Karnataka state. The center of India's high-tech industry, the city is also known for its parks and nightlife. By Cubbon Park, Vidhana Soudha is a Neo-Dravidian legislative building. Former royal residences include 19th-century Bangalore Palace, modeled after England’s Windsor Castle, and Tipu Sultan’s Summer Palace, an 18th-century teak structure.</p>
+                </article>
+            </section>
+            <footer>
+                <p>These are some major cities of India.</p>
+            </footer>
+        </body>
+</html>

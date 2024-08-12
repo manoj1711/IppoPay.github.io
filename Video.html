@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Html Video
+        </title>
+    </head>
+    <body>
+        <div style="text-align: center;">
+            <button onclick="playPause()">Play/Pause</button>
+            <button onclick="makeBig()">Big</button>
+            <button onclick="makeSmall()">Small</button>
+            <button onclick="makeNormal()">Normal Size</button>
+            <br>    
+            <br>
+            <video id="Vid1" width="300" height="300" >
+                <source src="C:\Users\acer\OneDrive\Desktop\IppoPay Internship\HTML\Videos\movie.mp4" type="video/mp4">
+            </video>
+            <script>
+                var myVideo= document.getElementById("Vid1");
+                 
+                function playPause(){
+                    if (myVideo.paused)
+                      myVideo.play();
+                    else
+                      myVideo.pause();
+                }
+                function makeBig(){
+                    myVideo.width=650;
+                }
+                function makeSmall(){
+                    myVideo.width=250;
+                }
+                function makeNormal(){
+                    myVideo.width=450;
+                }
+            </script>
+            <footer><p><a href="https://www.w3schools.com/html/html5_video.asp"  target="_blank">Video from w3schools</a></footer>
+            </body>
+</html>

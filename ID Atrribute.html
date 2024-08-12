@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+#myheader {
+  background-color: cadetblue;
+  text-align: center;
+  padding: 50px;
+  color:darkorchid;
+}
+#places{
+  background-color: gold;
+  text-align: center;
+  padding: 35px;
+}
+.city{
+  background-color: crimson;
+  text-align: center;
+  padding:35px;
+  color: darkorange;
+}
+</style>
+</head>
+<body>
+    <h1 id="myheader">ID Attribute</h1>
+    <h1 id="places">Places</h1>
+    <h3 id="places">Mumbai</h3>
+    <h2 class="city">Bangalore</h2>
+    <h2 class="city">Kochi</h2>
+
+    <h4 id="text">List of Places</h4>
+    <button onclick="displayResult()">Show List</button>
+    <script>
+      function displayResult(){
+        document .getElementById("text").innerHTML = "Kolkata Delhi Chennai"
+      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>CANVAS</title>
+    </head>
+    <body>
+        <img id = "ippopay" src = "C:\Users\acer\OneDrive\Desktop\IppoPay Internship\HTML\Images\download.png" alt="IppoPay" width="200" height="250">
+        <canvas id="myCanvas" width="300" height="250" style="border: 3px solid black;"  ></canvas> 
+        <p><button onclick= "myCanvas()">Try it</button></p> 
+<script>
+function myCanvas() {
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("ippopay");
+  ctx.drawImage(img,20,20);
+}
+</script>
+</body>
+</html>
